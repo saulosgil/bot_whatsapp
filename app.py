@@ -18,7 +18,7 @@ for linha in pagina_clientes.iter_rows(min_row=2):
     telefone = linha[1].value
     
     mensagem = f'Olá {nome} estou testando meu app de mensagens automatizadas.'
-    # Criar links personalizados do whatsapp e enviar mensagens para cada aluno
+    # Criar links personalizados do whatsapp e enviar mensagens para cada pessoa
     # com base nos dados da planilha
     try:
         link_mensagem_whatsapp = f'https://web.whatsapp.com/send?phone={telefone}&text={quote(mensagem)}'
