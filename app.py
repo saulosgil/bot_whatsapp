@@ -1,5 +1,5 @@
 """
-AUTOMATIZAÇÃO DE MENSAGENS DE WHATSAPP P/ ALUNOS ENADE
+AUTOMATIZAÇÃO DE MENSAGENS DE WHATSAPP 
 """
 import openpyxl
 from urllib.parse import quote
@@ -9,7 +9,7 @@ import pyautogui
 import os 
 
 # Ler planilha e guardar informações sobre nome e telefone
-workbook = openpyxl.load_workbook('alunos.xlsx')
+workbook = openpyxl.load_workbook('names.xlsx')
 pagina_clientes = workbook['Sheet1']
 
 for linha in pagina_clientes.iter_rows(min_row=2):
